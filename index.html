@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span id="test"></span>
+</body>
+<script>
+
+let isMobile = window.navigator.userAgentData.mobile;
+document.querySelector('#test').innerText = isMobile ? 'Tak' : 'Nie';
+
+
+</script>
+
+</html>
