@@ -10,7 +10,8 @@
 </body>
 <script>
 
-let isMobile = window.navigator.userAgentData.mobile;
+const isMobile = navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/BlackBerry/i);
+
 document.querySelector('#test').innerText = isMobile ? 'Tak' : 'Nie';
 
 
