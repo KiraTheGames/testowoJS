@@ -7,11 +7,18 @@
 </head>
 <body>
     <span id="test"></span>
+    <span id="test2"></span>
 </body>
 <script>
 
 const isMobile = navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/BlackBerry/i);
 
+    if (window.innerWidth <= 768) {
+    document.querySelector('#test2').innerText = "dupa";
+        
+    }
+
+    
 document.querySelector('#test').innerText = isMobile ? 'Tak' : 'Nie';
 
 
